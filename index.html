@@ -10,8 +10,8 @@
     <div ng-controller="TodoCtrl">
       <span>{{remaining()}} of {{todos.length}} remaining</span>
       [ <a href="" ng-click="archive()">archive</a> ]
-      <ul class="unstyled">
-        <li ng-repeat="todo in todos">
+      <ul class="task-list">
+        <li ng-repeat="todo in todos" class="list-item">
           <input type="checkbox" ng-model="todo.done">
           <span class="done-{{todo.done}}">{{todo.text}}</span>
         </li>
